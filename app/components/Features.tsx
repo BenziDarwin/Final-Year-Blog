@@ -16,32 +16,25 @@ import ViewQuiltRoundedIcon from "@mui/icons-material/ViewQuiltRounded";
 const items = [
   {
     icon: <ViewQuiltRoundedIcon />,
-    title: "Dashboard",
+    title: "Land Appreciation Prediction",
     description:
-      "This item could provide a snapshot of the most important metrics or data points related to the product.",
-    imageLight:
-      'url("/static/images/templates/templates-images/dash-light.png")',
-    imageDark: 'url("/static/images/templates/templates-images/dash-dark.png")',
+      "A compelling headline that grabs attention and suggests a significant benefit.",
+    image:
+      'url("/images/land.png")',
   },
   {
     icon: <EdgesensorHighRoundedIcon />,
-    title: "Mobile integration",
+    title: "Android Mobile App",
     description:
       "This item could provide information about the mobile app version of the product.",
-    imageLight:
-      'url("/static/images/templates/templates-images/mobile-light.png")',
-    imageDark:
-      'url("/static/images/templates/templates-images/mobile-dark.png")',
+    image: 'url("/images/phone.jpg")',
   },
   {
     icon: <DevicesRoundedIcon />,
-    title: "Available on all platforms",
+    title: "Website access to anaylitcs",
     description:
       "This item could let users know the product is available on all platforms, such as web, mobile, and desktop.",
-    imageLight:
-      'url("/static/images/templates/templates-images/devices-light.png")',
-    imageDark:
-      'url("/static/images/templates/templates-images/devices-dark.png")',
+    image:'url("/images/web.png")',
   },
 ];
 
@@ -115,12 +108,10 @@ export default function Features() {
           >
             <Box
               sx={{
-                backgroundImage: (theme) =>
-                  theme.palette.mode === "light"
-                    ? items[selectedItemIndex].imageLight
-                    : items[selectedItemIndex].imageDark,
+                backgroundImage: items[selectedItemIndex].image,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
                 minHeight: 280,
               }}
             />
@@ -264,28 +255,16 @@ export default function Features() {
           md={6}
           sx={{ display: { xs: "none", sm: "flex" }, width: "100%" }}
         >
-          <Card
-            variant="outlined"
-            sx={{
-              height: "100%",
-              width: "100%",
-              display: { xs: "none", sm: "flex" },
-              pointerEvents: "none",
-            }}
-          >
             <Box
               sx={{
                 m: "auto",
-                width: 420,
-                height: 500,
+                width: "100%",
+                height: "100%",
                 backgroundSize: "contain",
-                backgroundImage: (theme) =>
-                  theme.palette.mode === "light"
-                    ? items[selectedItemIndex].imageLight
-                    : items[selectedItemIndex].imageDark,
+                backgroundImage: items[selectedItemIndex].image,
+                backgroundRepeat: "no-repeat",
               }}
             />
-          </Card>
         </Grid>
       </Grid>
     </Container>

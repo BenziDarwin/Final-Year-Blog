@@ -45,10 +45,7 @@ export default function Hero() {
               variant="h1"
               sx={{
                 fontSize: "clamp(3rem, 10vw, 4rem)",
-                color: (theme) =>
-                  theme.palette.mode === "light"
-                    ? "primary.main"
-                    : "primary.light",
+                color: "#FE705B",
               }}
             >
               Analytics
@@ -59,9 +56,9 @@ export default function Hero() {
             color="text.secondary"
             sx={{ alignSelf: "center", width: { sm: "100%", md: "80%" } }}
           >
-            Explore our cutting-edge dashboard, delivering high-quality
-            solutions tailored to your needs. Elevate your experience with
-            top-tier features and services.
+             Whether you&apos;re a property investor, agent, or manager, streamline your workflows and maximize 
+             returns with real-time analytics, comprehensive market insights, and intuitive property 
+             management tools.
           </Typography>
         </Stack>
         <Box
