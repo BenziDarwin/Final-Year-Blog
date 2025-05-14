@@ -27,7 +27,7 @@ export default function Benjamin() {
             "Collaborated with the data visualization team to present insights through a web interface",
           ]}
           technologies={["Python", "Pandas", "Scikit-learn", "Jupyter Notebook", "Git"]}
-          images={["/images/ai/valuation_graph.png", "/images/ai/feature_importance.png"]}
+          images={["/images/ai/valuation_graph.png", "/images/ai/feature_evaluation.png"]}
         />
       </main>
     </div>
