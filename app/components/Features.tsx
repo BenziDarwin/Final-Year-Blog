@@ -23,13 +23,6 @@ const items = [
       'url("/images/land.png")',
   },
   {
-    icon: <EdgesensorHighRoundedIcon />,
-    title: "Android Mobile App",
-    description:
-      "This item could provide information about the mobile app version of the product.",
-    image: 'url("/images/phone.jpg")',
-  },
-  {
     icon: <DevicesRoundedIcon />,
     title: "Website access to anaylitcs",
     description:
